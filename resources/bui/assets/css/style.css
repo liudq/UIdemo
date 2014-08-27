@@ -1,0 +1,14 @@
+   .header{
+	height: 44px;
+}
+.header, .dl-main-nav {
+	 
+    background: url("") repeat-x scroll 0 0 #204077;
+}
+.header, .dl-main-nav {
+    background: url("../img/main-nav-bg1.png") repeat-x scroll 0 0 #204077;
+}
+.dl-log{
+font-size: 14px;
+    line-height: 22px;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<title>公司管理-XXX管理平台</title>
+   	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta name="description" content="">
+  	<meta name="author" content="">
+
+	<link rel="stylesheet" type="text/css" href="../resources/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../resources/bootstrap/css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/style.css">
+	
+
+
+
+	<!--[if lt IE 9]><script src="../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+	
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	  <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+	  <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+	
+	
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../resources/js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="../resources/js/form.js"></script>
+
+
+   
+  </head>
+  <body>
+    <!-- Callout for the old docs link -->
+    <div class="container bs-docs-container" style="margin-top: 25px;padding-bottom:30px">
+  		<div class="row">
+        	<div class="col-md-24" role="main" id="mainContent">
+    			
+  	<!-- search start -->
+
+<form class="form-search form-inline form-line clearfix">
+      <div class="form-group">
+          <label class="sr-only" for="exampleInputEmail2">公司名称：</label>
+          <input type="text" class="form-control" value=""  name="firCode" id="firCode" placeholder="公司编码">
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="exampleInputPassword2">公司编号：</label>
+        <input type="text" class="form-control" value=""  id="firName" name="firName" placeholder="公司名称">
+      </div>
+      <button type="submit" class="btn btn-primary" contenteditable="true">查询</button>
+</form>
+
+   	<!-- search end  -->
+       <div class="row"> &nbsp;</div>
+       <div class="row">
+	     <div class="btn-group">
+	     
+		  <a type="button" class="btn btn-primary glyphicon glyphicon-plus" data-toggle="modal"  href="../system/create.html">添加</a>
+		  <button type="button" class="btn btn-primary glyphicon glyphicon-remove" id="remove">删除</button>
+		  <button type="button" class="btn btn-primary glyphicon glyphicon-zoom-in" id="view">查看</button>
+		 </div>
+       </div>
+		<div class="row"> &nbsp;</div>
+    	<div class="row">
+   			<table class="table table-bordered table-hover table-striped table-condensed">
+				<thead>
+					<tr>
+					<th> <input type="checkbox" id="all"/> </th>
+							<th> 公司编码 </th>
+							<th> 公司名字 </th>
+							<th> 上级公司 </th>
+							<th> 联系电话 </th>
+						<th> 操作 </th>
+					</tr>
+				</thead>
+				<tbody>
+					
+	       			 <tr>
+						<td> <input type="checkbox" value="2" name="chkItem"/> </td>
+							<td>LB_GS03</td>
+							<td>丽博通达技术</td>
+							<td></td>
+							<td></td>
+						<td> 
+							<a type="button" class="btn btn-primary btn-sm glyphicon glyphicon-zoom-in" href='../system/view.html'></a>
+							<a type="button" class="btn btn-primary btn-sm glyphicon glyphicon-wrench"  href='../system/update.html'></a>
+							<button type="button" class="btn btn-primary btn-sm glyphicon glyphicon-remove" name="removeById" data-options="3"></button>
+						</td>
+					 </tr>
+	       			 
+	       			 <tr>
+						<td> <input type="checkbox" value="3" name="chkItem"/> </td>
+							<td>LB_GS04</td>
+							<td>乐动医药北京有限公司</td>
+							<td></td>
+							<td></td>
+						<td> 
+							<a type="button" class="btn btn-primary btn-sm glyphicon glyphicon-zoom-in" href='../system/view.html'></a>
+							<a type="button" class="btn btn-primary btn-sm glyphicon glyphicon-wrench"  href='../system/update.html'></a>
+							<button type="button" class="btn btn-primary btn-sm glyphicon glyphicon-remove" name="removeById" data-options="3"></button>
+						</td>
+					 </tr>
+	       			 
+	       			
+	       			 
+				</tbody>
+			</table>
+			
+
+
+<style>
+<!--
+   .pagination{ position: relative; padding-left: 51px; left: 100px; }
+   .pagination > li:first-child > a, .pagination > li:first-child > span { margin-left: 0; border-top-left-radius: 0; border-bottom-left-radius: 0; }
+   .pagination .btn-group{ position: absolute; left: 0; }
+   .pagination .dropdown-toggle{ overflow: hidden; width: 50px; height: 31px; border: 1px solid #ddd; border-right: 0; border-radius: 4px 0 0 4px; background: #fff; }
+   .pagination .dropdown-menu{ min-width: 48px; overflow: hidden; border-radius: 0; }
+   .pagination .dropdown-menu a{ width: 48px; height: 34px; line-height: 34px; text-align: center; padding: 0; }
+
+-->
+</style>
+
+
+
+  
+  
+  
+<!-- pagination start -->
+<ul class="pagination">
+  <li>
+	  <div class="btn-group dropup">
+	  <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">10<span class="caret"></span>
+	  </button>
+	  <ul role="menu" class="dropdown-menu">
+	  			<li  ><a href="?limit=5&page=2">5</a></li>
+	            <li class="active" ><a href="?limit=10&page=2">10</a></li>
+	            <li  ><a href="?limit=20&page=2">20</a></li>
+	            <li  ><a href="?limit=50&page=2">50</a></li>
+	   </ul>
+	</div>
+  </li>
+  <li ><a href="?page=1">首页</a></li>
+  
+  	<li class="disabled"><a href="javascript:;">上一页</a></li>
+  
+  
+  
+  
+	  
+	  	<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+	  
+	  
+  
+  
+   
+   <li class="disabled"><a href="javascript:;">下一页</a></li>
+   
+   
+  <li><a href="?page=1">末页</a></li>
+</ul>
+
+<!-- pagination end -->
+
+			</div>
+  
+     		</div>
+        </div>
+    </div>
+  </body>
+</html>

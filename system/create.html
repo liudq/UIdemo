@@ -1,0 +1,100 @@
+  <!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<title>公司管理-XXX管理平台</title>
+   	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta name="description" content="">
+  	<meta name="author" content="">
+
+	<link rel="stylesheet" type="text/css" href="../resources/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../resources/bootstrap/css/bootstrap-theme.css">
+	<link rel="stylesheet" type="text/css" href="../resources/css/style.css">
+	
+	<!--[if lt IE 9]><script src="../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+	
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	  <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+	  <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+	
+	
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="../resources/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../resources/js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="../resources/js/form.js"></script>
+
+
+   </head>
+  <body>
+    <!-- Callout for the old docs link -->
+    <div class="container bs-docs-container" style="margin-top: 25px;padding-bottom:30px">
+  		<div class="row">
+        	<div class="col-md-24" role="main" id="mainContent">
+    			
+ 
+<form id="company" role="form" class="form-horizontal" action="/mpsims/company.html" method="post" enctype="multipart/form-data">
+
+<input id="pkCompany" name="pkCompany" type="hidden" value=""/> 
+ <div class="row">
+	<div class="form-group">
+		 <label for="companyName" class="col-sm-2 control-label">公司名字</label>
+		<div class="col-md-12">
+			<input id="companyName" name="companyName" class="form-control" type="text" value=""/>
+		</div>
+		<div class="col-md-8">
+			
+		</div>
+	</div>
+	<div class="form-group">
+		 <label for="upFkCompany" class="col-sm-2 control-label">上级公司</label>
+		<div class="col-md-12">
+				<select id="upFkCompany" name="upFkCompany" class="form-control">
+					<option value="">请选择</option>
+					<option value="2">丽博通达技术</option>
+					<option value="3">乐动医药北京有限公司</option>
+					<option value="4">我的测试</option>
+					<option value="5">我的测试公司</option>
+					<option value="6">中华药业</option>
+					<option value="7">华为手机医药有限公司</option>
+					<option value="8">华中制药</option>
+				</select>
+		</div>
+		<div class="col-md-8">
+			
+		</div>
+	</div>
+	<div class="form-group">
+		 <label for="linkTelphone" class="col-sm-2 control-label">联系电话</label>
+		<div class="col-md-12">
+			<input id="linkTelphone" name="linkTelphone" class="form-control" type="text" value=""/>
+		</div>
+		<div class="col-md-8">
+			
+		</div>
+	</div>
+	<div class="form-group">
+		 <label for="businessLicence" class="col-sm-2 control-label">营业执照</label>
+		<div class="col-md-12">
+			
+				<input type="file" name="fileToUpload" id="fileToUpload"/>
+		</div>
+		<div class="col-md-8">
+			
+		</div>
+	</div>
+<div class="form-group">
+		<label for="inputForm" class="col-sm-2 control-label"></label>
+		<div class="col-md-12">
+		<button type="submit" class="btn btn-primary">提交</button>
+		<a type="submit" class="btn btn-primary" href="../system/index.html">返回列表页</a>
+		</div>
+	</div>
+</div>
+</form>
+     		</div>
+        </div>
+    </div>
+  </body>
+</html>

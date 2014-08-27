@@ -1,0 +1,64 @@
+body{font-family:"ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei",sans-serif; font-size:12px; }
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, .lead {font-family:"ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei UI","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;}
+pre code { background: transparent; }
+@media (min-width: 768px) {
+    .bs-docs-home .bs-social, 
+    .bs-docs-home .bs-masthead-links {
+      margin-left: 0;
+    }
+}
+
+.bs-docs-section p {
+	line-height: 2;
+}
+
+.bs-docs-section p.lead {
+	line-height: 1.4;
+}
+/*set default font size by feixiang.zhang*/
+
+header{font-size:14px}
+
+.form-control{height: 29px;font-size: 12px;}
+
+.table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
+  border-bottom-width: 1px;
+}
+
+.table th {
+    background-color: #EAEAEA;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,.table-striped>tbody>tr:nth-child(odd)>th{background-color:#f9f9f9}
+
+/*by liudq*/
+.form-line {
+	border: 1px solid #eee;
+    margin-bottom: 20px;
+    padding: 8px;
+    border-radius: 0.5em;
+}
+/**/
+.panel.datagrid{
+	margin-left: auto;
+	margin-right: auto;
+}
+/* by ljj lockRecord */
+.preview{
+       border:1px solid #cccccc; 
+       background:#FFFFFF ;
+       color:#FFCC00;
+       padding:5px; 
+       display:none; 
+       position:absolute;
+	   display: none;
+	   z-index: 9900000;
+	   outline: none;
+	   padding: 5px;
+	   border-width: 1px;
+	   border-style: solid;
+	   border-radius: 5px;
+	   -moz-border-radius: 5px 5px 5px 5px;
+	   -webkit-border-radius: 5px 5px 5px 5px;
+	   border-radius: 5px 5px 5px 5px;
+   } 
